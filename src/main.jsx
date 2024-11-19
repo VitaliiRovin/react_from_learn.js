@@ -1,7 +1,7 @@
 import {createRoot} from 'react-dom/client';
+import {App} from './app.jsx';
 
-createRoot(document.getElementById('root')).render(
-	<div>
+const root = document.getElementById('root');
+const reactRoot = createRoot(root);
 
-	</div>
-);
+reactRoot.render(<App/>);
