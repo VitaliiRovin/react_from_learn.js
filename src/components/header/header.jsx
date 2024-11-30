@@ -1,3 +1,7 @@
+import {Clock} from '../clock/clock.jsx';
+
 export const Header = () => (
-  <header>header</header>
+  <header>
+    <Clock/>
+  </header>
 )
