@@ -14,22 +14,7 @@ export const Restaurant = () => {
     <>
       <NavRestaurant arrRestaurants={RESTAURANTS} handleSelectRestaurant={handleSelectRestaurant}/>
 
-      <section key={selectedRestaurant.id}>
-        <h2>{selectedRestaurant.name}</h2>
-        <Menu menu={selectedRestaurant.menu}/>
-        <Reviews reviews={selectedRestaurant.reviews}/>
-      </section>
-      <section key={selectedRestaurant.id}>
-        <h2>{selectedRestaurant.name}</h2>
-        <Menu menu={selectedRestaurant.menu}/>
-        <Reviews reviews={selectedRestaurant.reviews}/>
-      </section>
-      <section key={selectedRestaurant.id}>
-        <h2>{selectedRestaurant.name}</h2>
-        <Menu menu={selectedRestaurant.menu}/>
-        <Reviews reviews={selectedRestaurant.reviews}/>
-      </section>
-      <section key={selectedRestaurant.id}>
+      <section className='container' key={selectedRestaurant.id}>
         <h2>{selectedRestaurant.name}</h2>
         <Menu menu={selectedRestaurant.menu}/>
         <Reviews reviews={selectedRestaurant.reviews}/>
