@@ -1,13 +1,13 @@
 import {Clock} from '../clock/clock.jsx';
 import style from './header.module.css'
-import classNames from 'classnames'
 import anyFood from '../../images/svg/anyFood.svg'
+import {Container} from '../container/container.jsx'
 
 export const Header = () => (
   <header className={style.header}>
-    <div className={classNames(style.wrapper, 'container')}>
+    <Container extraClass='header'>
       <div></div>
-      <a href='/' className={style.logo}>
+      <a href='/'>
         <img
           src={anyFood}
           alt='AnyFood'
@@ -20,6 +20,6 @@ export const Header = () => (
         <Clock/>
         <div></div>
       </div>
-    </div>
+    </Container>
   </header>
 )

@@ -12,12 +12,12 @@
   align-items: center;
 }
 
-.wrapperCountReview {
+.wrapperCountReverse {
   flex-direction: row;
   margin-bottom: 15px;
 }
 
-.wrapperCountReview span {
+.wrapperCountReverse span {
   margin-bottom: 0;
   margin-left: 10px;
   order: 1;
@@ -25,39 +25,4 @@
 
 .wrapperButtons {
   display: flex;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--yellow);
-  border: none;
-  border-radius: var(--border-radius-small);
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-}
-
-@media (hover: hover) {
-  .button:hover {
-    background-color: var(--orange);
-    color: var(--white);
-  }
-}
-
-@media (hover: none) {
-  .button:active {
-    background-color: var(--orange);
-    color: var(--white);
-  }
-}
-
-.button + .button {
-  margin-left: 1px;
-}
-
-.button img {
-  width: 18px;
-  height: 18px;
 }

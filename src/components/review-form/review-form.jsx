@@ -1,7 +1,7 @@
 import {useForm} from './use-form.js';
 import {Counter} from '../counter/counter.jsx';
 import style from './review-form.module.css'
-import classNames from 'classnames';
+import {ButtonWithText} from '../buttonWithText/buttonWithText.jsx';
 
 export const ReviewForm = () => {
   const {form, setName, setText, increment, decrement, reset} = useForm()
@@ -38,23 +38,12 @@ export const ReviewForm = () => {
               increment={increment}
               decrement={decrement}
               count={rating}
-              isLocation='review'
+              order='reverse'
             />
           </div>
           <div>
-            <button
-              type='submit'
-              className={classNames('button')}
-            >
-              Publish review
-            </button>
-            <button
-              className={classNames('button')}
-              type='button'
-              onClick={reset}
-            >
-              Clear
-            </button>
+            <ButtonWithText text='Publish review' type='submit'/>
+            <ButtonWithText text='Clear' type='button' onClick={reset}/>
           </div>
         </fieldset>
       </form>

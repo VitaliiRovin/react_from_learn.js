@@ -7,10 +7,3 @@
   padding: var(--container-padding-x);
   text-align: center;
 }
-
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}

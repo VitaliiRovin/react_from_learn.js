@@ -25,10 +25,6 @@
   background-color: var(--black);
 }
 
-.title .active {
-  background-color: transparent;
-}
-
 .item {
   display: flex;
   align-items: center;

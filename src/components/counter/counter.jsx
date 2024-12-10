@@ -2,44 +2,18 @@ import style from './counter.module.css'
 import minus from '../../images/svg/minus.svg'
 import plus from '../../images/svg/plus.svg'
 import classNames from 'classnames';
+import {ButtonCount} from '../buttonCount/buttonCount.jsx';
 
-export const Counter = ({increment, decrement, count, isLocation}) => {
-
-  const className = classNames(
-    style.wrapperCount,
-    {[style.wrapperCountReview]: isLocation==='review'},
-  )
-
+export const Counter = ({increment, decrement, count, order}) => {
   return (
-    <div className={className}>
+    <div className={classNames(
+      style.wrapperCount,
+      {[style.wrapperCountReverse]: order==='reverse'},
+    )}>
       <span className={style.count}>{count}</span>
       <div className={style.wrapperButtons}>
-        <button
-          className={style.button}
-          onClick={decrement}
-          type='button'
-        >
-          <img
-            src={minus}
-            alt='minus'
-            width='18'
-            height='18'
-            loading='lazy'
-          />
-        </button>
-        <button
-          className={style.button}
-          onClick={increment}
-          type='button'
-        >
-          <img
-            src={plus}
-            alt='plus'
-            width='18'
-            height='18'
-            loading='lazy'
-          />
-        </button>
+        <ButtonCount alt='minus' img={minus} onChange={decrement}/>
+        <ButtonCount alt='plus' img={plus} onChange={increment}/>
       </div>
     </div>
   )
