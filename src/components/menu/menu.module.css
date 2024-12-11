@@ -1,0 +1,35 @@
+.list {
+  display: grid;
+  gap: 12px;
+  max-width: 450px;
+}
+
+.title {
+  position: relative;
+  padding-block: 12px;
+  padding-inline: 0;
+  line-height: 1.5;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: none;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  top: calc(100% - 3px);
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--black);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: var(--border-grey);
+  padding-inline: 26px;
+  padding-block: 20px;
+}

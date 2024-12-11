@@ -1,0 +1,40 @@
+.title {
+  position: relative;
+  padding-block: 12px;
+  padding-inline: 0;
+  line-height: 1.5;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: none;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  top: calc(100% - 3px);
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--black);
+}
+
+.list {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: var(--border-grey);
+  padding-block: 20px;
+  padding-inline: 26px;
+}
+
+.containerReview h4 {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,32 @@
+:root {
+  --black: #1d1d1d;
+  --white: #fff;
+  --orange: #e4661e;
+  --orange-light: #f0894e;
+  --pink: #fff0db;
+  --yellow: #f0ad4e;
+  --yellow-light: #ffd25d;
+  --grey: #e5e5e5;
+  --green: #49ab39;
+  --input-border: #c4c4c4;
+  --couner: #898989;
+
+  --border-yellow: 1px solid var(--yellow);
+  --border-orange: 1px solid var(--orange);
+  --border-grey: 1px solid var(--grey);
+  --border-dark-grey: 1px solid var(--input-border);
+  --border-radius-small: 2px;
+  --border-radius-big: 4px;
+
+  --shodow: 0 4px 10px rgba(0, 0, 0, .2);
+
+  --font-family: -Roboto, sans-serif;
+
+  --container-width: 884px;
+  --container-padding-x: 12px;
+
+  --input-height: 38px;
+  --button-height: 50px;
+
+  --transition-duration: 0.2s;
+}

@@ -1,0 +1,17 @@
+.item h4 {
+  margin-bottom: 5px;
+}
+
+.item p {
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--yellow);
+}
+
+.price::after {
+  content: ' $';
+}

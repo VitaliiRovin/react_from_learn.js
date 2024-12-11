@@ -1,0 +1,29 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: var(--border-radius-small);
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+}
+
+@media (hover: none) {
+  .button:active {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+}
+
+.button + .button {
+  margin-left: 1px;
+}

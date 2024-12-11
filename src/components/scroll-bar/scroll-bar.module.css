@@ -1,0 +1,12 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.progressLine {
+  height: 5px;
+  background-color: var(--yellow);
+  transition: 0s;
+}

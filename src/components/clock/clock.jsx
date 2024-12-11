@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import style from './clock.module.css'
 
 export const Clock = () => {
   const [now, setNow] = useState(new Date())
@@ -9,7 +10,7 @@ export const Clock = () => {
     return () => clearInterval(interval)
   }, [])
   return (
-    <div>
+    <div className={style.wrapper}>
       {now.toLocaleTimeString()}
     </div>
   )
